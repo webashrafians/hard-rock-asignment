@@ -47,22 +47,22 @@ function displayData(allData){
 }
 
     
-    let displayLyric = document.getElementById('song-lyric');
-    function getLyrics(artist, songTitle){
+    // let displayLyric = document.getElementById('song-lyric');
+    // function getLyrics(artist, songTitle){
          
         
-        fetch(`${apiURL}/v1/${artist}/${songTitle}`)
-        .then(res => res.jeson())
-        .then(data => {
-            lyrics
-        })
-        const lyrics = data.lyrics.replace(/(\r\n|\r|\n)g, '<br>');
+    //     fetch(`${apiURL}/v1/${artist}/${songTitle}`)
+    //     .then(res => res.jeson())
+    //     .then(data => {
+    //         lyrics
+    //     })
+    //     const lyrics = data.lyrics.replace(/(\r\n|\r|\n)g, '<br>');
 
-        displayLyric.innerHTML +=
-        `<h2 class="text-success mb-4" id="title">${artist}</h2>
-        <pre class="lyric text-white">
-            ${lyrics}
-        </pre>`
+    //     displayLyric.innerHTML +=
+    //     `<h2 class="text-success mb-4" id="title">${artist}</h2>
+    //     <pre class="lyric text-white">
+    //         ${lyrics}
+    //     </pre>`
 
-        console.log(a,b);
-    }
+    //     console.log(a,b);
+    // }
